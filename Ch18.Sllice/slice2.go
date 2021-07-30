@@ -9,7 +9,7 @@ func ChangeArray(array2 [5]int) {
 func ChangeSlice(slice []int) {
 	slice[2] = 200
 }
-func main() {
+func slice2() {
 	// array와 slice 비교
 	array := [5]int{1, 2, 3, 4, 5}
 	slice := []int{1, 2, 3, 4, 5}
