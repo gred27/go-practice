@@ -2,6 +2,11 @@ package main
 
 import "fmt"
 
+/*
+	interface도 타입
+	구현이 빠진 메소드를 정의
+	메서드명이 중복되면 안된다.(overriding X)
+*/
 type Stringer interface {
 	String() string
 }
@@ -15,7 +20,7 @@ func (s Student) String() string {
 	return fmt.Sprintf("Hi, I'm %d old, %s.", s.Age, s.Name)
 }
 
-func main() {
+func interface1() {
 	student := Student{"Hong", 28}
 	var stringer Stringer
 
