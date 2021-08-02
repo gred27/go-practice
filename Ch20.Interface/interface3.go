@@ -40,20 +40,20 @@ func PrintVal(v interface{}) {
 	}
 }
 
-type Student struct {
+type Person struct {
 	Age int
 }
 
-type IStudent interface {
+type IPerson interface {
 	getAge()
 }
 
-func main() {
+func interface3() {
 	PrintVal(10)
 	PrintVal(3.14)
 	PrintVal("Hello")
-	PrintVal(Student{15})
+	PrintVal(Person{15})
 
-	var s IStudent // 기본값 nil
-	s.getAge()     // s = nil 이므로 런타임에러
+	var s IPerson // 기본값 nil
+	s.getAge()    // s = nil 이므로 런타임에러
 }
