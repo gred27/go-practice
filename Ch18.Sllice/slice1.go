@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func slice2() {
+func slice1() {
 	// 빈 슬라이스
 	var slice1 []int
 	fmt.Println(slice1)
