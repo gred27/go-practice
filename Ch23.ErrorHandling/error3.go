@@ -7,6 +7,7 @@ type PassWordError struct {
 	RequireLen int
 }
 
+// Error 메소드 구현
 func (err PassWordError) Error() string {
 	return "암호길이가 짧습니다."
 }
